@@ -31,8 +31,3 @@ export default class Wrapper {
         this.sizes = new SizeHandler(this.baseUrl, cacheExp, 'option_size', cachePersist);
     }
 }
-
-const wraper = new Wrapper('', 20000, true, '', '');
-wraper.commodity.getAll({}, true).then((x) => {
-    console.log(x);
-});
