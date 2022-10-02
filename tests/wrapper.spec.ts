@@ -5,13 +5,13 @@ const appKey = 'bmKar4ZjgkDV15pcjYFcm5WRlp6ELIv1';
 let wraper:any;
   
 
-describe('my beverage', () => {
+describe('wrapper class test', () => {
     beforeAll(() => {
         // Clears the database and adds some testing data.
         // Jest will wait for this promise to resolve before running tests.
         wraper = new Wraper(url, 20000, true, appKey, convert);
       });
-    it('is delicious', () => {
+    it('should pass appkey to wrapper class', () => {
         const key = wraper.currencyAppKey;
         expect(key).toEqual(appKey);
     });
