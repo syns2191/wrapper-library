@@ -31,3 +31,5 @@ export default class Wrapper {
         this.sizes = new SizeHandler(this.baseUrl, cacheExp, 'option_size', cachePersist);
     }
 }
+
+const wraper = new Wrapper('', 20000, true, '', '');
