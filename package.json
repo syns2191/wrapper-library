@@ -9,7 +9,9 @@
     "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "cli": "tsc && node dist/bin/index.js",
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint"
   },
   "author": "nyoman",
   "license": "ISC",
