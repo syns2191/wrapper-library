@@ -11,7 +11,8 @@
         "moduleResolution": "node",
         "strict": true,
         "target": "es2021",
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
+        "rootDir": "src"
       },
       "include": [
         "src/**/*",
