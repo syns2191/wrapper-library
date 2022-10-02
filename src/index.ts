@@ -31,11 +31,3 @@ export default class Wrapper {
         this.sizes = new SizeHandler(this.baseUrl, cacheExp, 'option_size', cachePersist);
     }
 }
-
-const url = 'https://stein.efishery.com/v1/storages/5e1edf521073e315924ceab4';
-const convert = 'https://api.apilayer.com/exchangerates_data/';
-const appKey = 'bmKar4ZjgkDV15pcjYFcm5WRlp6ELIv1'
-const a = new Wrapper(url, 30000, true, appKey, convert);
-a.commodity.getAll({}, true).then((x) => {
-    console.log(x);
-});

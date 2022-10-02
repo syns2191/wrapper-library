@@ -46,7 +46,7 @@ class DataLists extends Request {
 
     async getAll(params: GetParams, usdInfo:boolean):Promise<Lists[] | any>  {
         if (usdInfo) {
-            const resp = await this.Get(params, this.sheet);;
+            const resp = await this.Get(params, this.sheet);
             const currencyInfo = await this.currency.getAll({from: 'IDR', to: 'USD', amount: 1});
             return addUsdInfo(resp, currencyInfo);
         }

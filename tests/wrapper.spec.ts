@@ -12,7 +12,7 @@ describe('my beverage', () => {
         wraper = new Wraper(url, 20000, true, appKey, convert);
       });
     it('is delicious', () => {
-        const key = wraper.appKey;
+        const key = wraper.currencyAppKey;
         expect(key).toEqual(appKey);
     });
 });

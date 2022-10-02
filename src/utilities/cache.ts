@@ -11,7 +11,10 @@ class Cache {
     exp: number;
     constructor(exp: number, cachePersist: boolean) {
         if (cachePersist) {
-            this.db = new nedb({autoload: true, filename: path.join(os.tmpdir(), 'cache-fish-lib')});
+            this.db = new nedb({autoload: false, filename: path.join(os.tmpdir(), 'cache-fish-lib')});
+            this.db.loadDatabase(function (err) {    // Callback is optional
+                // Now commands will be executed
+            });
         } else {
             this.db = new nedb();
         }
