@@ -9,7 +9,6 @@
         ],
         "module": "esnext",
         "moduleResolution": "node",
-        "outDir": "dist",
         "strict": true,
         "target": "es2021",
         "forceConsistentCasingInFileNames": true
@@ -19,6 +18,7 @@
         "global.d.ts"
       ],
       "exclude": [
-        "node_modules"
+        "node_modules",
+        "tests/**/*"
       ]
 }
