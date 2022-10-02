@@ -33,4 +33,6 @@ export default class Wrapper {
 }
 
 const wraper = new Wrapper('', 20000, true, '', '');
-wraper.commodity.getAll({}, true);
+wraper.commodity.getAll({}, true).then((x) => {
+    console.log(x);
+});
