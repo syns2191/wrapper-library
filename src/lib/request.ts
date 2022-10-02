@@ -1,7 +1,7 @@
 import fetch, {RequestInit, Response} from 'node-fetch';
 import {
     GlobalParams,
-} from '../interfaces/IRequest.js';
+} from '../interfaces/IRequest';
 import {
     postOption,
     getOption,
@@ -9,8 +9,8 @@ import {
     getUrl,
     putOption,
     authOption
-} from './request-helper.js';
-import Cache from '../utilities/cache.js';
+} from './request-helper';
+import Cache from '../utilities/cache';
 
 class Request {
     baseUrl: string;

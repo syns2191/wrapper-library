@@ -1,6 +1,6 @@
 import {
     Lists
-} from '../interfaces/Icomodity.js';
+} from '../interfaces/Icomodity';
 import nedb from 'nedb';
 import os from 'os';
 import path from 'path';

@@ -3,7 +3,7 @@ import {
     Lists,
     DeleteOption,
     UpdateOption
- } from '../interfaces/Icomodity.js';
+ } from '../interfaces/Icomodity';
 
 const headers:Headers = new Headers();
 headers.append('Content-Type', 'application/json');

@@ -2,7 +2,7 @@ import {
     GetAllByRange,
     Lists,
     GetMaxPrice
-} from '../interfaces/Icomodity.js';
+} from '../interfaces/Icomodity';
 import moment from 'moment';
 
 

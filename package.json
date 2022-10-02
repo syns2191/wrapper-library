@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "fish comodity library",
   "main": "dist/index.js",
-  "type": "module",
   "scripts": {
     "start": "tsc && node dist/index.js",
     "lint": "eslint . --ext .ts",
@@ -35,7 +34,7 @@
     "moment": "^2.29.4",
     "nedb": "^1.8.0",
     "node-cache": "^5.1.2",
-    "node-fetch": "^3.2.10",
+    "node-fetch": "^2.6.7",
     "prompts": "^2.4.2"
   }
 }

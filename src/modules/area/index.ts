@@ -1,8 +1,8 @@
-import Request from '../../lib/request.js';
+import Request from '../../lib/request';
 import {
     GetParams,
     Areas,
-} from '../../interfaces/IArea.js';
+} from '../../interfaces/IArea';
 class AreaHandler extends Request {
     baseUrl: string;
     sheet: string;

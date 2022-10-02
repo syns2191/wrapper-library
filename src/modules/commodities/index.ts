@@ -1,4 +1,4 @@
-import Request from '../../lib/request.js';
+import Request from '../../lib/request';
 import {
     GetParams,
     Lists,
@@ -9,13 +9,13 @@ import {
     UpdateOption,
     Search,
     DeleteOption
-} from '../../interfaces/Icomodity.js';
+} from '../../interfaces/Icomodity';
 import {
     rangeFilter,
     maxRecord,
     addUsdInfo
-} from '../../lib/filter-helper.js';
-import { CurrencyProp } from '../../interfaces/ICurrency.js';
+} from '../../lib/filter-helper';
+import { CurrencyProp } from '../../interfaces/ICurrency';
 class DataLists extends Request {
     baseUrl: string;
     sheet: string;

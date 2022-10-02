@@ -1,8 +1,8 @@
-import Request from '../../lib/request.js';
+import Request from '../../lib/request';
 import {
     GetParams,
     Sizes,
-} from '../../interfaces/ISize.js';
+} from '../../interfaces/ISize';
 class SizeHandler extends Request {
     baseUrl: string;
     sheet: string;

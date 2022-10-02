@@ -1,16 +1,16 @@
-import DataLists from "./modules/commodities/index.js";
-import AreaHandler from "./modules/area/index.js";
-import SizeHandler from "./modules/size/index.js";
-import CurrencyHandler from "./modules/currency/index.js";
+import DataLists from "./modules/commodities/index";
+import AreaHandler from "./modules/area/index";
+import SizeHandler from "./modules/size/index";
+import CurrencyHandler from "./modules/currency/index";
 import {
     CommoditiesProp
-} from './interfaces/Icomodity.js';
-import { AreaProp } from './interfaces/IArea.js';
-import { SizeProp } from './interfaces/ISize.js';
-import { CurrencyProp } from './interfaces/ICurrency.js';
+} from './interfaces/Icomodity';
+import { AreaProp } from './interfaces/IArea';
+import { SizeProp } from './interfaces/ISize';
+import { CurrencyProp } from './interfaces/ICurrency';
 
 
-const url = 'https://stein.efishery.com/v1/storages/5e1edf521073e315924ceab4';
+// const url = 'https://stein.efishery.com/v1/storages/5e1edf521073e315924ceab4';
 
 
 export default class Wrapper {
@@ -31,3 +31,11 @@ export default class Wrapper {
         this.sizes = new SizeHandler(this.baseUrl, cacheExp, 'option_size', cachePersist);
     }
 }
+
+const url = 'https://stein.efishery.com/v1/storages/5e1edf521073e315924ceab4';
+const convert = 'https://api.apilayer.com/exchangerates_data/';
+const appKey = 'bmKar4ZjgkDV15pcjYFcm5WRlp6ELIv1'
+const a = new Wrapper(url, 30000, true, appKey, convert);
+a.commodity.getAll({}, true).then((x) => {
+    console.log(x);
+});

@@ -1,8 +1,8 @@
-import Request from '../../lib/request.js';
+import Request from '../../lib/request';
 import {
     GetParams,
     Auth
-} from '../../interfaces/ICurrency.js';
+} from '../../interfaces/ICurrency';
 class CurrencyHandler extends Request {
     baseUrl: string;
     sheet: string;
