@@ -1,8 +1,8 @@
 interface Lists {
     uuid?: string;
     komoditas: string;
-    area_provinsi: string | null;
-    area_kota: string | null;
+    area_provinsi: string;
+    area_kota: string;
     size: string;
     price: string;
     tgl_parsed: string;
@@ -77,7 +77,7 @@ interface GetMaxPrice {
 interface CommoditiesProp {
     getAllByRange(params: GetAllByRange, usdInfo:boolean):Promise<Lists[] | any>;
     getAll(params: GetParams, usdInfo:boolean):Promise<Lists[] | any>;
-    getByArea(params:GetParams, usdInfo:boolean):Promise<Lists[] | any>;
+    getByArea(params:GetByArea, usdInfo:boolean):Promise<Lists[] | any>;
     getById(params: GetById, usdInfo:boolean):Promise<Lists[]> | any;
     getMaxPrice(params: GetMaxPrice): Promise<any>;
     addRecords(data: Lists[]):Promise<any>;
